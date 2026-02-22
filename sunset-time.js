@@ -1,5 +1,5 @@
 // ===== SKY ANIMATION =====
-let skySpeed = 100000;
+let skySpeed = 100;
 let intervals = [
   15000, 15000, 15000, 15000, 15000,
   15000, 15000, 15000, 15000, 15000,
@@ -35,7 +35,7 @@ tick = (dt) => {
   let i = s + (e-s)*t;
 
   api.getPlayerIds().forEach(id => {
-    api.setClientOption(id, "skyBlock", {
+    api.setClientOption(id, "skyBox", {
       type: "earth",
       inclination: i,
       turbidity: 1,
